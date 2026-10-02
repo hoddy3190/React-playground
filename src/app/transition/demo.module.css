@@ -1,0 +1,29 @@
+/* globals.css のダークモードを打ち消して /transition 配下は常に白背景 */
+.root { flex: 1; background: #ffffff; color: #171717; color-scheme: light; }
+.page h2 { font-size: 1.25rem; margin-top: 40px; }
+.page h3 { margin-top: 32px; margin-bottom: 8px; }
+.page p { margin-top: 8px; line-height: 1.7; }
+.page .points { margin-top: 8px; padding-left: 20px; line-height: 1.8; }
+.page p code, .page li code { background: #f4f4f5; padding: 1px 4px; border-radius: 3px; font-size: 0.9em; }
+.seqWrap { margin-top: 12px; overflow-x: auto; border: 1px solid #e4e4e7; border-radius: 8px; background: #fff; }
+.seq { display: block; width: 100%; min-width: 640px; height: auto; }
+.table { margin-top: 12px; border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+.table th, .table td { border: 1px solid #e4e4e7; padding: 8px; text-align: left; vertical-align: top; }
+.table th { background: #f4f4f5; }
+.page { max-width: 720px; margin: 0 auto; padding: 32px 16px; font-family: var(--font-geist-sans), sans-serif; }
+.page h1 { font-size: 1.5rem; margin-bottom: 8px; }
+.page pre { background: #f4f4f5; color: #18181b; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; }
+.links { display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap; }
+.links a { color: #2563eb; text-decoration: underline; }
+.demo { margin-top: 24px; }
+.tabs { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tab, .activeTab { padding: 8px 16px; border: 1px solid #a1a1aa; border-radius: 6px; background: #fff; color: #18181b; cursor: pointer; }
+.activeTab { background: #18181b; color: #fff; }
+.pendingOn, .pendingOff { margin-left: auto; font-family: var(--font-geist-mono), monospace; padding: 4px 8px; border-radius: 4px; }
+.pendingOn { background: #fde68a; color: #78350f; }
+.pendingOff { background: #e4e4e7; color: #3f3f46; }
+.panel, .panelPending { margin-top: 16px; min-height: 120px; border: 2px solid #d4d4d8; border-radius: 8px; padding: 16px; transition: opacity 0.2s; }
+.panelPending { opacity: 0.5; border-style: dashed; }
+.content { font-size: 1.2rem; }
+.fallback { color: #b91c1c; font-weight: bold; }
+.log { font-size: 0.9rem; line-height: 1.8; }
